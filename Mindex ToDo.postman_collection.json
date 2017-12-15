@@ -1,0 +1,109 @@
+{
+	"info": {
+		"name": "Mindex ToDo",
+		"_postman_id": "ca590823-f466-95a7-5137-4b852d757b40",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test Add Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/toDoList/addItem?title=Test Post&desc=Post Description&dueDate=12/16/2017/12:00:00",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toDoList",
+						"addItem"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Test Post",
+							"equals": true
+						},
+						{
+							"key": "desc",
+							"value": "Post Description",
+							"equals": true
+						},
+						{
+							"key": "dueDate",
+							"value": "12/16/2017/12:00:00",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Test Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/toDoList/addItem?title=New Post&desc= New Description",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toDoList",
+						"addItem"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "New Post",
+							"equals": true
+						},
+						{
+							"key": "desc",
+							"value": " New Description",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Test Get Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/toDoList/getItem?title=New Post",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"toDoList",
+						"getItem"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "New Post",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
