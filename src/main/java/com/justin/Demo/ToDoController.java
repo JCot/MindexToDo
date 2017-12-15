@@ -29,6 +29,12 @@ public class ToDoController {
         return null;
     }
 
+    public ToDoController(){
+        //put an initial item in the list.
+        ToDoItem newItem = new ToDoItem("Test", "Test Description", new Date());
+        toDoList.add(newItem);
+    }
+
     @GetMapping("/getAllItems")
     public ArrayList<ToDoItem> getAllItems(){
         return toDoList;
@@ -36,11 +42,6 @@ public class ToDoController {
 
     @GetMapping("/getItem")
     public ResponseEntity getOneItem(@RequestParam(value="title") String title){
-        //TODO get from local store
-        if(toDoList.size() == 0){
-            ToDoItem newItem = new ToDoItem("Test", "Test Description", new Date());
-            toDoList.add(newItem);
-        }
         ToDoItem item = findItemByTitle(title);
         if(item != null) {
             return ResponseEntity.ok(item);

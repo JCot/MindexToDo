@@ -21,8 +21,8 @@ public class ToDoItem {
         return this.description;
     }
 
-    public Date getDueDate(){
-        return this.dueDate;
+    public String getDueDate(){
+        return this.dueDate.toString();
     }
 
     public void setDescription(String description){
