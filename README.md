@@ -7,7 +7,7 @@ Alternativley run `./mvnw spring-boot:run`. This will start the app right away.
 
 App runs at `localhost:8080/toDoList/*`
 
-Endpoints
+### Endpoints
 GET: `/getItem`
 Params: String `title`
 
@@ -15,4 +15,4 @@ POST: `/addItem`
 Params: String 'title', String 'desc', String `dueDate` (format `MM/dd/yyyy/hh:mm:ss`)
 
 PATCH: `/updateItem`
-Params: String 'title', String 'desc', String `dueDate` (format `MM/dd/yyyy/hh:mm:ss`)
+Params: String 'title' (required), String 'desc' (optional), String `dueDate` (format `MM/dd/yyyy/hh:mm:ss`) (optional)
