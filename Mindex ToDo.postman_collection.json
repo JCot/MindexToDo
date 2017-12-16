@@ -51,7 +51,7 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "localhost:8080/toDoList/addItem?title=New Post&desc= New Description",
+					"raw": "localhost:8080/toDoList/updateItem?title=New Post&desc=New Description",
 					"host": [
 						"localhost"
 					],
